@@ -9,6 +9,7 @@ COPY . .
 
 # Install pandas
 RUN pip install pandas
+RUN pip install google-cloud-bigquery pandas-gbq
 
 # Create cleaned_data folder in container
 RUN mkdir -p cleaned_data
